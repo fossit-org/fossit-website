@@ -18,6 +18,20 @@ export default {
       },
     },
     extend: {
+      fontFamily: {
+        heading: ['"Red Hat Display"', 'system-ui', '-apple-system', 'sans-serif'],
+        body: ['"Roboto Mono"', '"Courier New"', 'monospace'],
+        sans: ['"Roboto Mono"', '"Courier New"', 'monospace'], // default body font
+      },
+      fontSize: {
+        // Perfect Fourth (1.333) Type Scale
+        'base': '1rem',      // 16px
+        'lg': '1.333rem',    // ~21.33px
+        'xl': '1.777rem',    // ~28.43px
+        '2xl': '2.369rem',   // ~37.90px
+        '3xl': '3.157rem',   // ~50.51px
+        '4xl': '4.209rem',   // ~67.34px
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",

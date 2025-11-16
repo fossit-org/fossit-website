@@ -6,6 +6,18 @@
 
 :root {
   --font-size: 16px;
+  --font-heading: "Red Hat Display", system-ui, -apple-system, sans-serif;
+  --font-body: "Roboto Mono", "Courier New", monospace;
+  
+  /* Perfect Fourth (1.333) Type Scale in REM */
+  --text-base: 1rem;        /* 16px */
+  --text-lg: 1.333rem;      /* ~21.33px */
+  --text-xl: 1.777rem;      /* ~28.43px */
+  --text-2xl: 2.369rem;     /* ~37.90px */
+  --text-3xl: 3.157rem;     /* ~50.51px */
+  --text-4xl: 4.209rem;     /* ~67.34px */
+  --font-weight-bold: 700;
+  
   --background: #ffffff;
   --foreground: oklch(0.145 0 0);
   --card: #ffffff;
@@ -130,6 +142,12 @@
 
   body {
     @apply bg-background text-foreground;
+    font-family: var(--font-body);
+  }
+  
+  /* Apply heading font to all h1-h6 elements */
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
   }
 }
 
@@ -139,30 +157,35 @@
 @layer base {
   :where(:not(:has([class*=' text-']), :not(:has([class^='text-'])))) {
     h1 {
-      font-size: var(--text-2xl);
-      font-weight: var(--font-weight-medium);
-      line-height: 1.5;
+      font-family: var(--font-heading);
+      font-size: var(--text-4xl);
+      font-weight: var(--font-weight-bold);
+      line-height: 1.2;
     }
 
     h2 {
-      font-size: var(--text-xl);
+      font-family: var(--font-heading);
+      font-size: var(--text-3xl);
       font-weight: var(--font-weight-medium);
-      line-height: 1.5;
+      line-height: 1.3;
     }
 
     h3 {
-      font-size: var(--text-lg);
+      font-family: var(--font-heading);
+      font-size: var(--text-2xl);
       font-weight: var(--font-weight-medium);
-      line-height: 1.5;
+      line-height: 1.4;
     }
 
     h4 {
-      font-size: var(--text-base);
+      font-family: var(--font-heading);
+      font-size: var(--text-xl);
       font-weight: var(--font-weight-medium);
-      line-height: 1.5;
+      line-height: 1.4;
     }
 
     p {
+      font-family: var(--font-body);
       font-size: var(--text-base);
       font-weight: var(--font-weight-normal);
       line-height: 1.5;
@@ -190,4 +213,34 @@
 
 html {
   font-size: var(--font-size);
+}
+
+/* Ensure type scale applies globally for headings (overrides utility classes when needed)
+   so the perfect fourth scale is present in CSS and not only via Tailwind classes. */
+h1 {
+  font-family: var(--font-heading);
+  font-size: var(--text-4xl);
+  font-weight: var(--font-weight-medium);
+  line-height: 1.2;
+}
+
+h2 {
+  font-family: var(--font-heading);
+  font-size: var(--text-3xl);
+  font-weight: var(--font-weight-medium);
+  line-height: 1.3;
+}
+
+h3 {
+  font-family: var(--font-heading);
+  font-size: var(--text-2xl);
+  font-weight: var(--font-weight-medium);
+  line-height: 1.4;
+}
+
+h4 {
+  font-family: var(--font-heading);
+  font-size: var(--text-xl);
+  font-weight: var(--font-weight-medium);
+  line-height: 1.4;
 }

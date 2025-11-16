@@ -28,7 +28,7 @@ export default function Navbar() {
             <div className="bg-gradient-to-br from-[#492170] to-[#8f5fbf] p-2 rounded-xl">
               <Code className="size-6 text-white" />
             </div>
-            <h1 className="text-3xl text-[#492170]">FOSSIT</h1>
+            <div className="text-[#492170]">FOSSIT</div>
           </div>
 
           <div className="hidden md:flex items-center gap-8">

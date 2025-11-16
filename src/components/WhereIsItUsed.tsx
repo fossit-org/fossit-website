@@ -6,7 +6,7 @@ export default function WhereIsItUsed() {
     <section className="bg-gradient-to-br from-[#e1fcf7] to-[#dae9f6] py-20 px-4">
       <div className="container mx-auto max-w-7xl">
         <div className="grid lg:grid-cols-2 gap-12 items-center mb-12">
-          <h2 className="text-4xl text-[#44625d]">
+          <h2 className="text-[#44625d]">
             Where is Open Source Software Useful?
           </h2>
           <p className="text-xl text-[#44625d] text-center lg:text-right">

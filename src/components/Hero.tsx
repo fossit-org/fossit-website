@@ -13,7 +13,7 @@ export default function Hero() {
               <Sparkles className="size-3 mr-1" />
               Open Source Gamification Platform
             </Badge>
-            <h1 className="text-6xl text-[#492170]">
+            <h1 className="text-[#492170]">
               FOSSIT
             </h1>
             <p className="text-xl text-gray-700">

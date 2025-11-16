@@ -4,15 +4,15 @@ export default function Footer() {
       <div className="container mx-auto max-w-7xl">
         <div className="grid md:grid-cols-4 gap-8 mb-12">
           <div>
-            <h3 className="font-['Cutive_Mono'] text-white mb-4">FOSSIT</h3>
-            <p className="font-['Roboto_Mono'] text-sm">
+            <h3 className="text-white mb-4">FOSSIT</h3>
+              <p className="text-sm">
               Gamifying open source development, one contribution at a time.
             </p>
           </div>
 
           <div>
-            <h4 className="font-['Roboto_Mono'] uppercase text-white mb-4">Platform</h4>
-            <ul className="space-y-2 font-['Roboto_Mono']">
+            <h4 className="uppercase text-white mb-4">Platform</h4>
+              <ul className="space-y-2">
               <li><a href="#" className="underline hover:text-white transition-colors uppercase">Home</a></li>
               <li><a href="#" className="underline hover:text-white transition-colors uppercase">About FOSSIT</a></li>
               <li><a href="#" className="underline hover:text-white transition-colors uppercase">Go To The App</a></li>
@@ -21,8 +21,8 @@ export default function Footer() {
           </div>
 
           <div>
-            <h4 className="font-['Roboto_Mono'] uppercase text-white mb-4">Resources</h4>
-            <ul className="space-y-2 font-['Roboto_Mono']">
+            <h4 className="uppercase text-white mb-4">Resources</h4>
+              <ul className="space-y-2">
               <li><a href="#" className="underline hover:text-white transition-colors uppercase">Learning Centre</a></li>
               <li><a href="#" className="underline hover:text-white transition-colors uppercase">For Developers</a></li>
               <li><a href="#" className="underline hover:text-white transition-colors uppercase">For Sponsors</a></li>
@@ -31,8 +31,8 @@ export default function Footer() {
           </div>
 
           <div>
-            <h4 className="font-['Roboto_Mono'] uppercase text-white mb-4">Contact</h4>
-            <ul className="space-y-2 font-['Roboto_Mono']">
+            <h4 className="uppercase text-white mb-4">Contact</h4>
+              <ul className="space-y-2">
               <li><a href="#" className="underline hover:text-white transition-colors uppercase">Contact</a></li>
               <li><a href="#" className="underline hover:text-white transition-colors uppercase">Feedback</a></li>
             </ul>
@@ -41,10 +41,10 @@ export default function Footer() {
 
         <div className="border-t border-white pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-            <p className="font-['Cutive_Mono'] text-white text-center md:text-left">
+            <p className="text-white text-center md:text-left">
               FOSSIT
             </p>
-            <div className="font-['Roboto_Mono'] text-center uppercase">
+              <div className="text-center uppercase">
               <p className="mb-0">
                 Designed and Developed by <span className="underline">Manish</span> and <span className="underline">FOSSIT</span>
               </p>

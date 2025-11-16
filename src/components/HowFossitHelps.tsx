@@ -5,7 +5,7 @@ export default function HowFossitHelps() {
   return (
     <section id="features" className="bg-gradient-to-br from-[#e7cfff] to-[#d4b5ff] py-20 px-4">
       <div className="container mx-auto max-w-7xl">
-        <h2 className="text-4xl text-[#492170] mb-4">
+        <h2 className="text-[#492170] mb-4">
           <span>How Does FOSSIT Make It </span>
           <span className="italic">Easy</span>?
         </h2>
@@ -64,7 +64,7 @@ export default function HowFossitHelps() {
         </div>
 
         <div className="bg-white/80 backdrop-blur-sm rounded-3xl p-8 md:p-12 shadow-xl">
-          <h3 className="text-3xl text-[#492170] mb-8">
+          <h3 className="text-[#492170] mb-8">
             The Gamification Edge
           </h3>
           <div className="grid md:grid-cols-2 gap-8">
@@ -74,7 +74,7 @@ export default function HowFossitHelps() {
                   <Trophy className="size-6" />
                 </div>
                 <div>
-                  <h4 className="text-lg text-[#492170] mb-2">Earn Points</h4>
+                  <h4 className="text-[#492170] mb-2">Earn Points</h4>
                   <p className="text-gray-600">Every contribution counts. Earn points for commits, pull requests, reviews, and more.</p>
                 </div>
               </div>
@@ -83,7 +83,7 @@ export default function HowFossitHelps() {
                   <TrendingUp className="size-6" />
                 </div>
                 <div>
-                  <h4 className="text-lg text-[#492170] mb-2">Climb Leaderboards</h4>
+                  <h4 className="text-[#492170] mb-2">Climb Leaderboards</h4>
                   <p className="text-gray-600">Compete with developers worldwide and showcase your dedication.</p>
                 </div>
               </div>
@@ -94,7 +94,7 @@ export default function HowFossitHelps() {
                   <Award className="size-6" />
                 </div>
                 <div>
-                  <h4 className="text-lg text-[#492170] mb-2">Unlock Badges</h4>
+                  <h4 className="text-[#492170] mb-2">Unlock Badges</h4>
                   <p className="text-gray-600">Collect achievement badges as you master different skills and technologies.</p>
                 </div>
               </div>
@@ -103,7 +103,7 @@ export default function HowFossitHelps() {
                   <Sparkles className="size-6" />
                 </div>
                 <div>
-                  <h4 className="text-lg text-[#492170] mb-2">Track Progress</h4>
+                  <h4 className="text-[#492170] mb-2">Track Progress</h4>
                   <p className="text-gray-600">Visualize your growth with detailed analytics and contribution history.</p>
                 </div>
               </div>

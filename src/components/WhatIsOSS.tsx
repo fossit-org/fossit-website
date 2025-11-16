@@ -13,7 +13,7 @@ export default function WhatIsOSS() {
             </p>
           </div>
           <div className="order-1 lg:order-2">
-            <h2 className="text-4xl text-[#3d5467] mb-8">
+            <h2 className="text-[#3d5467] mb-8">
               What is Open Source Software?
             </h2>
             <div className="space-y-6">

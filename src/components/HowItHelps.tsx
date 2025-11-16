@@ -5,7 +5,7 @@ export default function HowItHelps() {
   return (
     <section className="bg-gradient-to-br from-[#ffdcdf] to-[#ffc9d0] py-20 px-4">
       <div className="container mx-auto max-w-7xl">
-        <h2 className="text-4xl text-[#702129] mb-12">
+        <h2 className="text-[#702129] mb-12">
           <span>How Does Open Source Help </span>
           <span className="underline decoration-[#702129]">Developers</span>?
         </h2>
