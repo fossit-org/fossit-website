@@ -8,6 +8,7 @@ export default {
     './src/**/*.{ts,tsx}',
     './*.{ts,tsx}',
   ],
+  safelist: ["reveal"],
   prefix: "",
   theme: {
     container: {
@@ -31,6 +32,8 @@ export default {
         '2xl': '2.369rem',   // ~37.90px
         '3xl': '3.157rem',   // ~50.51px
         '4xl': '4.209rem',   // ~67.34px
+        '5xl': '5.611rem',   // ~89.78px
+        '6xl': '7.478rem',   // ~119.65px
       },
       colors: {
         border: "hsl(var(--border))",
