@@ -1,4 +1,4 @@
-import { Card, CardHeader, CardTitle, CardContent } from './ui/card';
+import { Card, CardHeader, CardTitle, CardContent } from '../ui/card';
 import { DollarSign, Rocket, TrendingUp } from 'lucide-react';
 
 export default function HowItHelps() {

@@ -1,12 +1,12 @@
 import Navbar from './components/Navbar';
-import Hero from './components/Hero';
-import WhatIsOSS from './components/WhatIsOSS';
-import WhereIsItUsed from './components/WhereIsItUsed';
-import HowItHelps from './components/HowItHelps';
-import HowFossitHelps from './components/HowFossitHelps';
-import HowItWorks from './components/HowItWorks';
-import Community from './components/Community';
-import CallToAction from './components/CallToAction';
+import Hero from './components/Sections/Hero';
+import WhatIsOSS from './components/Sections/WhatIsOSS';
+import WhereIsItUsed from './components/Sections/WhereIsItUsed';
+import HowItHelps from './components/Sections/HowItHelps';
+import HowFossitHelps from './components/Sections/HowFossitHelps';
+import HowItWorks from './components/Sections/HowItWorks';
+import Community from './components/Sections/Community';
+import CallToAction from './components/Sections/CallToAction';
 import Footer from './components/Footer';
 
 export default function App() {

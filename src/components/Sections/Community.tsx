@@ -1,4 +1,4 @@
-import { Card, CardHeader, CardTitle, CardDescription } from './ui/card';
+import { Card, CardHeader, CardTitle, CardDescription } from '../ui/card';
 import { Users, Code, Trophy, Star } from 'lucide-react';
 
 export default function Community() {

@@ -1,4 +1,4 @@
-import { Card, CardHeader, CardTitle, CardContent } from './ui/card';
+import { Card, CardHeader, CardTitle, CardContent } from '../ui/card';
 import { Globe, Monitor, Code } from 'lucide-react';
 
 export default function WhereIsItUsed() {

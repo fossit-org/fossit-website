@@ -1,4 +1,4 @@
-import { Card, CardHeader, CardTitle, CardContent } from './ui/card';
+import { Card, CardHeader, CardTitle, CardContent } from '../ui/card';
 import { Code, Star, Target, Users, BarChart3, Trophy, TrendingUp, Award, Sparkles } from 'lucide-react';
 
 export default function HowFossitHelps() {

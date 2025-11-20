@@ -1,7 +1,7 @@
 'use client';
 
-import { Badge } from './ui/badge';
-import { Button } from './ui/button';
+import { Badge } from '../ui/badge';
+import { Button } from '../ui/button';
 import { Sparkles, ArrowRight, Github, Rocket, Code, Users, Trophy } from 'lucide-react';
 import { useEffect, useRef } from 'react';
 import gsap from 'gsap';
