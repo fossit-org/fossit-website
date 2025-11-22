@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Github, Code, Menu, X } from 'lucide-react';
-import { Button } from './ui/button';
+import { OutlinedButton } from './Button';
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -44,10 +44,11 @@ export default function Navbar() {
             <button onClick={() => scrollToSection('community')} className="text-[var(--text-1)] hover:text-[var(--text-4)] transition-colors">
               Community
             </button>
-            <Button size="lg" variant="outline" className="border-2 border-[var(--text-4)] text-[var(--text-4)] hover:bg-[var(--text-4)] hover:text-[var(--bg-1)] group">
+            
+            <OutlinedButton>
               <Github className="size-4 mr-2" />
               Sign In
-            </Button>
+            </OutlinedButton>
           </div>
 
           <button 
@@ -72,10 +73,10 @@ export default function Navbar() {
             <button onClick={() => scrollToSection('community')} className="text-[var(--text-1)] hover:text-[var(--text-4)] transition-colors text-left">
               Community
             </button>
-            <Button size="lg" variant="outline" className="border-2 border-[var(--text-4)] text-[var(--text-4)] hover:bg-[var(--text-4)] hover:text-[var(--bg-1)] group">
+            <OutlinedButton>
               <Github className="size-4 mr-2" />
               Sign In
-            </Button>
+            </OutlinedButton>
           </div>
         )}
       </div>

@@ -1,7 +1,7 @@
 'use client';
 
 import { Badge } from '../ui/badge';
-import { Button } from '../ui/button';
+import { OutlinedButton } from '../Button';
 import { Sparkles, ArrowRight, Github, Rocket, Code, Users, Trophy } from 'lucide-react';
 import { useEffect, useRef } from 'react';
 import gsap from 'gsap';
@@ -137,14 +137,14 @@ export default function Hero() {
               For Open Source Software, I Think
             </p>
             <div className="hero-buttons flex flex-wrap gap-4 pt-4 justify-center">
-              <Button size="lg" variant="outline" className="border-2 border-[var(--text-4)] text-[var(--text-4)] hover:bg-[var(--text-4)] hover:text-[var(--bg-1)] group">
+              <OutlinedButton>
                 <Github className="size-5 mr-2" />
                 Get Started
-              </Button>
-              <Button size="lg" variant="outline" className="border-2 border-[var(--text-4)] text-[var(--text-4)] hover:bg-[var(--text-4)] hover:text-[var(--bg-1)] group">
+              </OutlinedButton>
+              <OutlinedButton>
                 Learn More
                 <ArrowRight className="size-5 ml-2 group-hover:translate-x-1 transition-transform" />
-              </Button>
+              </OutlinedButton>
             </div>
           </div>
         </div>
