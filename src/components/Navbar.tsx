@@ -21,7 +21,7 @@ export default function Navbar() {
   };
 
   return (
-    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-[var(--card)]/95 backdrop-blur-md shadow-lg' : 'bg-[var(--card)]'}`}>
+    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-[var(--card)]/95 backdrop-blur-md shadow-lg`}>
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
           <div className="flex items-center gap-3">
@@ -32,16 +32,16 @@ export default function Navbar() {
           </div>
 
           <div className="hidden md:flex items-center gap-8">
-            <button onClick={() => scrollToSection('about')} className="text-[var(--text-1)] hover:text-[var(--text-4)] transition-colors">
+            <button onClick={() => scrollToSection('about')} className="text-[#EEC643] hover:text-[var(--text-4)] transition-colors">
               About
             </button>
-            <button onClick={() => scrollToSection('features')} className="text-[var(--text-1)] hover:text-[var(--text-4)] transition-colors">
+            <button onClick={() => scrollToSection('features')} className="text-[#EEC643] hover:text-[var(--text-4)] transition-colors">
               Features
             </button>
-            <button onClick={() => scrollToSection('how-it-works')} className="text-[var(--text-1)] hover:text-[var(--text-4)] transition-colors">
+            <button onClick={() => scrollToSection('how-it-works')} className="text-[#EEC643] hover:text-[var(--text-4)] transition-colors">
               How It Works
             </button>
-            <button onClick={() => scrollToSection('community')} className="text-[var(--text-1)] hover:text-[var(--text-4)] transition-colors">
+            <button onClick={() => scrollToSection('community')} className="text-[#EEC643] hover:text-[var(--text-4)] transition-colors">
               Community
             </button>
             
@@ -61,16 +61,16 @@ export default function Navbar() {
 
         {isMobileMenuOpen && (
             <div className="md:hidden pb-6 flex flex-col gap-4">
-            <button onClick={() => scrollToSection('about')} className="text-[var(--text-1)] hover:text-[var(--text-4)] transition-colors text-left">
+            <button onClick={() => scrollToSection('about')} className="text-[#EEC643] hover:text-[var(--text-4)] transition-colors text-left">
               About
             </button>
-            <button onClick={() => scrollToSection('features')} className="text-[var(--text-1)] hover:text-[var(--text-4)] transition-colors text-left">
+            <button onClick={() => scrollToSection('features')} className="text-[#EEC643] hover:text-[var(--text-4)] transition-colors text-left">
               Features
             </button>
-            <button onClick={() => scrollToSection('how-it-works')} className="text-[var(--text-1)] hover:text-[var(--text-4)] transition-colors text-left">
+            <button onClick={() => scrollToSection('how-it-works')} className="text-[#EEC643] hover:text-[var(--text-4)] transition-colors text-left">
               How It Works
             </button>
-            <button onClick={() => scrollToSection('community')} className="text-[var(--text-1)] hover:text-[var(--text-4)] transition-colors text-left">
+            <button onClick={() => scrollToSection('community')} className="text-[#EEC643] hover:text-[var(--text-4)] transition-colors text-left">
               Community
             </button>
             <OutlinedButton>

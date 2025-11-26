@@ -3,7 +3,7 @@ import { Users, Code, Trophy, Star } from 'lucide-react';
 
 export default function Community() {
   return (
-    <section id="community" className="bg-[var(--bg-2)] py-20 px-4">
+    <section id="community" className="py-20 px-4">
       <div className="container mx-auto max-w-7xl">
         <div className="text-center mb-12">
           <h2 className="text-[var(--text-1)] mb-4">
@@ -15,23 +15,23 @@ export default function Community() {
         </div>
 
         <div className="grid md:grid-cols-2 gap-8">
-          <Card className="border-[var(--text-3)] bg-[var(--card)]">
-            <CardHeader className="flex items-start gap-4 p-6">
-              <div className="bg-[var(--primary)] text-[var(--text-1)] p-3 rounded-xl shrink-0">
+          <Card className="border-[var(--text-3)]">
+            <CardHeader className="flex items-center gap-4 p-6">
+              <div className="text-[var(--text-1)] p-3 rounded-xl shrink-0">
                 <Users className="size-8" />
               </div>
               <div>
                 <CardTitle className="text-[var(--text-1)] text-lg">Active Community</CardTitle>
-                <CardDescription>
+                <CardDescription className='text-[var(--text-1)]'>
                   Join discussions, ask questions, and share your experiences with fellow developers.
                 </CardDescription>
               </div>
             </CardHeader>
           </Card>
 
-          <Card className="border-[var(--text-3)] bg-[var(--card)]">
-            <CardHeader className="flex items-start gap-4 p-6">
-              <div className="bg-[var(--primary)] text-[var(--text-1)] p-3 rounded-xl shrink-0">
+          <Card className="border-[var(--text-3)]">
+            <CardHeader className="flex items-center gap-4 p-6">
+              <div className="text-[var(--text-3)] p-3 rounded-xl shrink-0">
                 <Code className="size-8" />
               </div>
               <div>
@@ -43,9 +43,9 @@ export default function Community() {
             </CardHeader>
           </Card>
 
-          <Card className="border-[var(--text-3)] bg-[var(--card)]">
+          <Card className="border-[var(--text-3)]">
             <CardHeader className="flex items-start gap-4 p-6">
-              <div className="bg-[var(--primary)] text-[var(--text-1)] p-3 rounded-xl shrink-0">
+              <div className="text-[var(--text-1)] p-3 rounded-xl shrink-0">
                 <Trophy className="size-8" />
               </div>
               <div>
@@ -57,9 +57,9 @@ export default function Community() {
             </CardHeader>
           </Card>
 
-          <Card className="border-[var(--text-3)] bg-[var(--card)]">
+          <Card className="border-[var(--text-3)]">
             <CardHeader className="flex items-start gap-4 p-6">
-              <div className="bg-[var(--primary)] text-[var(--text-1)] p-3 rounded-xl shrink-0">
+              <div className="text-[var(--text-1)] p-3 rounded-xl shrink-0">
                 <Star className="size-8" />
               </div>
               <div>
@@ -71,6 +71,7 @@ export default function Community() {
             </CardHeader>
           </Card>
         </div>
+        
       </div>
     </section>
   );

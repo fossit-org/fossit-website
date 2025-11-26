@@ -1,9 +1,9 @@
-import { Button } from '../ui/button';
+import { OutlinedButton, RaisedButton } from '../Button'
 import { Github } from 'lucide-react';
 
 export default function CallToAction() {
   return (
-    <section className="bg-[var(--bg-3)] py-20 px-4">
+    <section className="py-20 px-4">
       <div className="container mx-auto max-w-4xl text-center">
         <h2 className="text-[var(--text-1)] mb-6">
           Ready to Level Up Your Open Source Game?
@@ -12,13 +12,13 @@ export default function CallToAction() {
           Join thousands of developers who are already earning points, climbing leaderboards, and making meaningful contributions to open source projects.
         </p>
         <div className="flex flex-wrap gap-4 justify-center">
-          <Button className="bg-[var(--text-1)] hover:bg-[var(--text-4)] text-[var(--bg-3)] uppercase">
+          <RaisedButton>
             <Github className="size-4 mr-2" />
             Sign In with GitHub
-          </Button>
-          <Button variant="outline" className="border-[var(--text-1)] text-[var(--text-1)] hover:bg-[var(--text-1)] hover:text-[var(--bg-3)] uppercase">
+          </RaisedButton>
+          <OutlinedButton variant='secondary'>
             Explore Projects
-          </Button>
+          </OutlinedButton>
         </div>
 
         <div className="grid md:grid-cols-4 gap-6 mt-16">

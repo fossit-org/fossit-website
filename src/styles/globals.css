@@ -19,7 +19,7 @@
   --font-weight-bold: 700;
   
   /* New site palette (inverted color scheme) */
-  --bg-1: #01161E; /* primary background */
+    --bg-1: #210124; /* primary page background (user requested) */
   --bg-2: #0E1428; /* secondary background */
   --bg-3: #1F0322; /* tertiary background / accents */
 

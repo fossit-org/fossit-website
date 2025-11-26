@@ -64,7 +64,7 @@ export default function Hero() {
             end: 'bottom top',
             scrub: 1,
           },
-          y: -50,
+          // y: -50,
           ease: 'none',
         });
 
@@ -123,21 +123,21 @@ export default function Hero() {
   return (
     <main ref={heroRef} className="overflow-hidden">
       {/* Hero Section */}
-      <section id="about" className="relative bg-[var(--background)] pt-32 pb-20 px-4 min-h-screen flex items-center">
+      <section id="about" className="relative pt-32 pb-20 px-4 min-h-screen flex items-center">
         <div className="container mx-auto max-w-7xl text-center">
           <div className="space-y-8">
-            <Badge className="hero-badge bg-gradient-to-r from-[var(--text-4)] to-[var(--text-1)] text-[var(--background)] border-none px-4 py-2 font-bold">
+            <Badge className="hero-badge bg-gradient-to-r from-[var(--text-4)] to-[var(--text-3)] text-[var(--background)] border-none px-4 py-2 font-bold">
               <Sparkles className="size-3 mr-1" />
-              Open Source Gamification Platform
+              Coding Made More Fun
             </Badge>
             <h1 className="hero-title text-[var(--text-4)] text-8xl md:text-9xl font-bold tracking-tight">
               FOSSIT
             </h1>
-            <p className="hero-subtitle text-2xl md:text-3xl text-[var(--text-3)]">
+            <p className="hero-subtitle text-2xl md:text-3xl text-[var(--text-2)]">
               For Open Source Software, I Think
             </p>
             <div className="hero-buttons flex flex-wrap gap-4 pt-4 justify-center">
-              <OutlinedButton>
+              <OutlinedButton variant="primary">
                 <Github className="size-5 mr-2" />
                 Get Started
               </OutlinedButton>
@@ -153,21 +153,21 @@ export default function Hero() {
       {/* Adventure Section */}
       <section
         ref={(el) => (sectionsRef.current[0] = el)}
-        className="relative py-32 px-4 bg-gradient-to-br from-[var(--bg-2)] to-[var(--bg-1)] overflow-hidden"
+        className="relative py-32 px-4 overflow-hidden"
       >
         <div className="container mx-auto max-w-7xl">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div className="section-content space-y-6">
-              <h2 className="text-5xl md:text-6xl text-[#492170]">
+              <h2 className="text-5xl md:text-6xl text-[var(--text-2)]">
                 Transform Your Journey
               </h2>
-              <p className="text-xl text-gray-700 leading-relaxed">
+              <p className="text-xl text-[var(--text-3)] leading-relaxed">
                 Transform your open source journey into an engaging adventure.
                 Every contribution tells a story, every line of code makes a difference.
               </p>
             </div>
             <div className="section-svg relative h-96">
-              <svg viewBox="0 0 400 400" className="w-full h-full">
+              {/* <svg viewBox="0 0 400 400" className="w-full h-full">
                 <defs>
                     <linearGradient id="rocketGrad" x1="0%" y1="0%" x2="100%" y2="100%">
                       <stop offset="0%" stopColor="var(--text-4)" />
@@ -178,7 +178,7 @@ export default function Hero() {
                 <path d="M200 80 L220 140 L260 120 L240 180 L300 200 L240 220 L260 280 L220 260 L200 320 L180 260 L140 280 L160 220 L100 200 L160 180 L140 120 L180 140 Z" fill="url(#rocketGrad)" />
                 <circle cx="200" cy="200" r="30" fill="white" />
                 <Rocket className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 size-16 text-[var(--text-4)]" />
-              </svg>
+              </svg> */}
             </div>
           </div>
         </div>
@@ -187,7 +187,7 @@ export default function Hero() {
       {/* Contributions Section */}
       <section
         ref={(el) => (sectionsRef.current[1] = el)}
-        className="relative py-32 px-4 bg-gradient-to-br from-[var(--bg-2)] to-[var(--bg-1)] overflow-hidden"
+        className="relative py-32 px-4 overflow-hidden"
       >
         <div className="container mx-auto max-w-7xl">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
@@ -211,7 +211,7 @@ export default function Hero() {
               <h2 className="text-5xl md:text-6xl text-[var(--text-2)]">
                 Earn Points
               </h2>
-              <p className="text-xl text-gray-700 leading-relaxed">
+              <p className="text-xl text-[var(--text-3)] leading-relaxed">
                 Earn points for every contribution. Track your progress, celebrate milestones,
                 and watch your impact grow with each commit.
               </p>
@@ -223,7 +223,7 @@ export default function Hero() {
       {/* Learning Section */}
       <section
         ref={(el) => (sectionsRef.current[2] = el)}
-        className="relative py-32 px-4 bg-gradient-to-br from-[var(--bg-2)] to-[var(--bg-1)] overflow-hidden"
+        className="relative py-32 px-4 overflow-hidden"
       >
         <div className="container mx-auto max-w-7xl">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
@@ -231,7 +231,7 @@ export default function Hero() {
               <h2 className="text-5xl md:text-6xl text-[var(--text-2)]">
                 Master Fundamentals
               </h2>
-              <p className="text-xl text-gray-700 leading-relaxed">
+              <p className="text-xl text-[var(--text-3)] leading-relaxed">
                 Learn fundamentals from the ground up. Build skills, gain confidence,
                 and become the developer you aspire to be.
               </p>
@@ -257,7 +257,7 @@ export default function Hero() {
       {/* Community Section */}
       <section
         ref={(el) => (sectionsRef.current[3] = el)}
-        className="relative py-32 px-4 bg-gradient-to-br from-[var(--bg-2)] to-[var(--bg-1)] overflow-hidden"
+        className="relative py-32 px-4 overflow-hidden"
       >
         <div className="container mx-auto max-w-7xl">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
