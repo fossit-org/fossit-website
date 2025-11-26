@@ -1,7 +1,29 @@
-import { Card, CardHeader, CardTitle, CardDescription } from '../ui/card';
 import { Users, Code, Trophy, Star } from 'lucide-react';
+import { HorizontalCard } from '../Card';
 
 export default function Community() {
+  const data = [
+              {
+                title: 'Active Community',
+                icon: <Users className="size-8" />,
+                desc: 'Join discussions, ask questions, and share your experiences with fellow developers.',
+              },
+              {
+                title: 'Learning Resources',
+                icon: <Code className="size-8" />,
+                desc: 'Access exclusive tutorials, workshops, and mentorship opportunities.',
+              },
+              {
+                title: 'Monthly Challenges',
+                icon: <Trophy className="size-8" />,
+                desc: 'Participate in themed challenges and win exclusive badges and recognition.',
+              },
+              {
+                title: 'Showcase Your Work',
+                icon: <Star className="size-8" />,
+                desc: 'Build your developer profile and get discovered by potential employers.',
+              },
+            ];
   return (
     <section id="community" className="py-20 px-4">
       <div className="container mx-auto max-w-7xl">
@@ -15,61 +37,12 @@ export default function Community() {
         </div>
 
         <div className="grid md:grid-cols-2 gap-8">
-          <Card className="border-[var(--text-3)]">
-            <CardHeader className="flex items-center gap-4 p-6">
-              <div className="text-[var(--text-1)] p-3 rounded-xl shrink-0">
-                <Users className="size-8" />
-              </div>
-              <div>
-                <CardTitle className="text-[var(--text-1)] text-lg">Active Community</CardTitle>
-                <CardDescription className='text-[var(--text-1)]'>
-                  Join discussions, ask questions, and share your experiences with fellow developers.
-                </CardDescription>
-              </div>
-            </CardHeader>
-          </Card>
-
-          <Card className="border-[var(--text-3)]">
-            <CardHeader className="flex items-center gap-4 p-6">
-              <div className="text-[var(--text-3)] p-3 rounded-xl shrink-0">
-                <Code className="size-8" />
-              </div>
-              <div>
-                <CardTitle className="text-[var(--text-1)] text-lg">Learning Resources</CardTitle>
-                <CardDescription>
-                  Access exclusive tutorials, workshops, and mentorship opportunities.
-                </CardDescription>
-              </div>
-            </CardHeader>
-          </Card>
-
-          <Card className="border-[var(--text-3)]">
-            <CardHeader className="flex items-start gap-4 p-6">
-              <div className="text-[var(--text-1)] p-3 rounded-xl shrink-0">
-                <Trophy className="size-8" />
-              </div>
-              <div>
-                <CardTitle className="text-[var(--text-1)] text-lg">Monthly Challenges</CardTitle>
-                <CardDescription>
-                  Participate in themed challenges and win exclusive badges and recognition.
-                </CardDescription>
-              </div>
-            </CardHeader>
-          </Card>
-
-          <Card className="border-[var(--text-3)]">
-            <CardHeader className="flex items-start gap-4 p-6">
-              <div className="text-[var(--text-1)] p-3 rounded-xl shrink-0">
-                <Star className="size-8" />
-              </div>
-              <div>
-                <CardTitle className="text-[var(--text-1)] text-lg">Showcase Your Work</CardTitle>
-                <CardDescription>
-                  Build your developer profile and get discovered by potential employers.
-                </CardDescription>
-              </div>
-            </CardHeader>
-          </Card>
+          {data.map((item, idx) => (
+              <HorizontalCard key={idx} icon={item.icon} heading={item.title}>
+                {item.desc}
+              </HorizontalCard>
+            ))
+          }
         </div>
         
       </div>

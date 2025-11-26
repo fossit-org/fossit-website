@@ -1,5 +1,5 @@
-import { Button } from '../ui/button';
-import { Github } from 'lucide-react';
+import { RaisedButton } from '../Button'
+import { Github } from 'lucide-react'
 
 export default function HowItWorks() {
   return (
@@ -45,10 +45,10 @@ export default function HowItWorks() {
         </div>
 
         <div className="text-center">
-          <Button size="lg" className="bg-gradient-to-r from-[var(--text-4)] to-[var(--bg-3)] hover:from-[var(--text-2)] hover:to-[var(--text-3)] text-[var(--text-1)] shadow-lg hover:shadow-xl transition-all">
+          <RaisedButton>
             <Github className="size-5 mr-2" />
             Start Your Journey
-          </Button>
+          </RaisedButton>
         </div>
       </div>
     </section>
