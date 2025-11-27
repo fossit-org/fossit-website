@@ -8,7 +8,7 @@ const VerticalCard = ({children, icon, heading} : {children: React.ReactNode, ic
                 <div className="rounded-xl p-3 w-fit mx-auto">
                     {icon}
                 </div>
-                <CardTitle className="text-2xl">
+                <CardTitle className="text-xl md:text-2xl">
                     {heading}
                 </CardTitle>
             </CardHeader>
@@ -26,7 +26,7 @@ const HorizontalCard = ({children, icon, heading} : {children: React.ReactNode, 
                 {icon}
             </div>
             <div>
-                <h4 className="text-[#59A5D8] mb-2">
+                <h4 className="text-base md:text-lg text-[#59A5D8] mb-2">
                     {heading}
                 </h4>
                 <p className="text-[#91E5F6]">

@@ -50,7 +50,7 @@ export default function HowFossitHelps() {
           <span>How Does FOSSIT Make It </span>
           <span className="italic">Easy</span>?
         </h2>
-        <p className="text-lg text-[var(--text-3)] mb-12 max-w-2xl">
+        <p className="text-base md:text-lg text-[var(--text-3)] mb-12 max-w-2xl">
           We've built everything you need to succeed in open source
         </p>
 
@@ -82,7 +82,7 @@ export default function HowFossitHelps() {
                 <div className="rounded-xl p-3 w-fit mb-2">
                   <Trophy className="size-8" />
                 </div>
-                <CardTitle className="text-white text-3xl">1,000+</CardTitle>
+                <CardTitle className="text-white text-xl md:text-3xl">1,000+</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-[var(--text-1)]/90">Active Developers</p>
@@ -93,7 +93,7 @@ export default function HowFossitHelps() {
                 <div className="rounded-xl p-3 w-fit mb-2">
                   <Code className="size-8" />
                 </div>
-                <CardTitle className="text-white text-3xl">500+</CardTitle>
+                <CardTitle className="text-white text-xl md:text-3xl">500+</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-[var(--text-1)]/90">Open Source Projects</p>
@@ -104,7 +104,7 @@ export default function HowFossitHelps() {
                 <div className="rounded-xl p-3 w-fit mb-2">
                   <Star className="size-8" />
                 </div>
-                <CardTitle className="text-white text-3xl">10K+</CardTitle>
+                <CardTitle className="text-white text-xl md:text-3xl">10K+</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-[var(--text-1)]/90">Contributions Made</p>
@@ -115,7 +115,7 @@ export default function HowFossitHelps() {
                 <div className="rounded-xl p-3 w-fit mb-2">
                   <Award className="size-8" />
                 </div>
-                <CardTitle className="text-white text-3xl">25+</CardTitle>
+                <CardTitle className="text-white text-xl md:text-3xl">25+</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-[var(--text-1)]/90">Achievement Badges</p>

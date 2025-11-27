@@ -203,11 +203,11 @@ export default function Hero() {
               <Sparkles className="size-3 mr-1" />
               Coding Made More Fun
             </Badge> */}
-            <p className="hero-title text-[#51b2f3] text-6xl md:text-9xl font-light tracking-tight">
+            <p className="hero-title text-[#51b2f3] text-3xl md:text-9xl font-light tracking-tight">
               FOSSIT
             </p>
             <div className='absolute left-0 right-0 rounded-full opacity-15' style={{boxShadow: '0px 0px 400px 100px #d4b5ff'}}></div>
-            <p className="hero-subtitle text-2xl md:text-3xl text-[#C6F2FA]">
+            <p className="hero-subtitle text-base md:text-3xl text-[#C6F2FA]">
               For Open Source Software, I Think
             </p>
             <div className="hero-buttons flex flex-wrap gap-4 pt-4 justify-center">

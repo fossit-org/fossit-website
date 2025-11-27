@@ -24,7 +24,7 @@ export default function WhatIsOSS() {
       <div className="container mx-auto max-w-7xl">
         <div className="grid lg:grid-cols-2 gap-12 items-end">
           <div className="order-2 lg:order-1">
-            <p className="text-[var(--text-3)] leading-relaxed text-lg">
+            <p className="text-[var(--text-3)] leading-relaxed text-base md:text-lg">
               Most of the corporate software in the world is proprietary, which means the source code (the actual code used to make the software) is hidden from public view and you need special permissions from the company to view, alter and distribute it. Such software is called closed source.
               <br /><br />
               However, in open source software, things are the opposite of closed source. You can view, edit and distribute the software's source code without any special permissions. The best part is, it's completely free and somewhat easy to use.

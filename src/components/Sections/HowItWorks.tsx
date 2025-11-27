@@ -15,7 +15,7 @@ export default function HowItWorks() {
         <div className="grid md:grid-cols-3 gap-8 mb-12">
               <div className="text-center p-6 rounded-2xl transition-all shadow-sm hover:shadow-md">
                 <div className="text-[var(--text-1)] rounded-full size-20 flex items-center justify-center mx-auto mb-6 shadow-lg">
-              <span className="text-2xl">1</span>
+              <span className="text-xl md:text-2xl">1</span>
             </div>
                 <h3 className="mb-3 text-[var(--text-1)]">Connect GitHub</h3>
                 <p className="text-[var(--text-3)]">
@@ -25,7 +25,7 @@ export default function HowItWorks() {
 
               <div className="text-center p-6 rounded-2xl transition-all shadow-sm hover:shadow-md">
                 <div className="text-[var(--text-1)] rounded-full size-20 flex items-center justify-center mx-auto mb-6 shadow-lg">
-              <span className="text-2xl">2</span>
+              <span className="text-xl md:text-2xl">2</span>
             </div>
                 <h3 className="mb-3 text-[var(--text-2)]">Choose Projects</h3>
                 <p className="text-[var(--text-3)]">
@@ -35,7 +35,7 @@ export default function HowItWorks() {
 
               <div className="text-center p-6 rounded-2xl transition-all shadow-sm hover:shadow-md">
                 <div className="text-[var(--text-1)] rounded-full size-20 flex items-center justify-center mx-auto mb-6 shadow-lg">
-              <span className="text-2xl">3</span>
+              <span className="text-xl md:text-2xl">3</span>
             </div>
                 <h3 className="mb-3 text-[var(--text-2)]">Start Contributing</h3>
                 <p className="text-[var(--text-3)]">
