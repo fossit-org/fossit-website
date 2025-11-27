@@ -48,7 +48,7 @@ export default function Navbar() {
 
           <button 
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className="md:hidden text-[var(--text-1)]"
+            className="md:hidden text-[#F7EE7F]"
           >
             {isMobileMenuOpen ? <X className="size-6" /> : <Menu className="size-6" />}
           </button>

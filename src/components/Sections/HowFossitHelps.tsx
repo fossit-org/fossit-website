@@ -63,7 +63,7 @@ export default function HowFossitHelps() {
           ))}
         </div>
 
-        <div className="rounded-3xl p-8 md:p-12 shadow-xl">
+        <div className="md:p-12">
           <h3 className="text-[var(--text-1)] mb-8">
             The Gamification Edge
           </h3>

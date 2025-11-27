@@ -8,7 +8,7 @@ export default function CallToAction() {
         <h2 className="text-[var(--text-1)] mb-6">
           Ready to Level Up Your Open Source Game?
         </h2>
-        <p className="text-[var(--text-4)] mb-8 max-w-2xl mx-auto">
+        <p className="text-[var(--text-3)] mb-8 max-w-2xl mx-auto">
           Join thousands of developers who are already earning points, climbing leaderboards, and making meaningful contributions to open source projects.
         </p>
         <div className="flex flex-wrap gap-4 justify-center">
@@ -39,7 +39,7 @@ export default function CallToAction() {
             <div className="text-[var(--text-4)]">Badges</div>
           </div>
         </div> */}
-        
+
       </div>
     </section>
   );

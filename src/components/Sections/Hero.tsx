@@ -196,14 +196,14 @@ export default function Hero() {
       {/* Hero Section */}
       <section id="about" className="relative pt-32 pb-20 px-4 min-h-screen flex items-center">
         {/* <div className='absolute bottom-0 left-0 rounded-full' style={{boxShadow: '0px 0px 400px 100px #53A2BE'}}></div> */}
-        <div className='absolute top-0 right-0 rounded-full opacity-20' style={{boxShadow: '0px 0px 800px 200px #F0E2A3'}}></div>
+        {/* <div className='absolute top-0 right-0 rounded-full opacity-20' style={{boxShadow: '0px 0px 800px 200px #F0E2A3'}}></div> */}
         <div className="container mx-auto max-w-7xl text-center">
           <div className="space-y-8">
-            <Badge className="hero-badge bg-gradient-to-r from-[#1F0322] to-[#0E1428] text-[#53A2BE] border-none px-4 py-2 font-bold">
+            {/* <Badge className="hero-badge bg-gradient-to-r from-[#1F0322] to-[#0E1428] text-[#53A2BE] border-none px-4 py-2 font-bold">
               <Sparkles className="size-3 mr-1" />
               Coding Made More Fun
-            </Badge>
-            <p className="hero-title text-[#d4b5ff] text-8xl md:text-9xl font-light tracking-tight">
+            </Badge> */}
+            <p className="hero-title text-[#51b2f3] text-6xl md:text-9xl font-light tracking-tight">
               FOSSIT
             </p>
             <div className='absolute left-0 right-0 rounded-full opacity-15' style={{boxShadow: '0px 0px 400px 100px #d4b5ff'}}></div>
