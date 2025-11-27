@@ -1,8 +1,8 @@
 'use client';
 
-import { Badge } from '../ui/badge';
+// import { Badge } from '../ui/badge';
 import { OutlinedButton } from '../Button';
-import { Sparkles, ArrowRight, Github } from 'lucide-react';
+import { ArrowRight, Github } from 'lucide-react';
 import { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
