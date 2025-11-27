@@ -40,22 +40,19 @@ export default function Footer() {
             ));
           })()}
         </div>
-{/* 
-        <div className="border-t border-[var(--border)] pt-8">
+
+        <div className="border-t border-[var(--border)] pt-8 text-sm">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-[var(--text-1)] text-center md:text-left">
               FOSSIT
             </p>
               <div className="text-center uppercase">
               <p className="mb-0">
-                Designed and Developed by <span className="underline">FOSSIT</span>
-              </p>
-              <p>
-                With <span className="underline">JavaScript</span> and ❤️
+                Designed and Developed by and for <span className="underline">India</span><img src="https://em-content.zobj.net/source/twitter/408/flag-india_1f1ee-1f1f3.png" alt="Indian Flag" className="inline-block ml-2 w-[1.75rem]" />
               </p>
             </div>
           </div>
-        </div> */}
+        </div>
       </div>
     </footer>
   );

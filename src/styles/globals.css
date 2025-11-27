@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+/* https://coolors.co/061523-53a2be-1d84b5-132e32-176087 */
+
 @custom-variant dark (&:is(.dark *));
 
 :root {

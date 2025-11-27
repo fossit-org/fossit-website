@@ -21,7 +21,7 @@ export default function CallToAction() {
           </OutlinedButton>
         </div>
 
-        <div className="grid md:grid-cols-4 gap-6 mt-16">
+        {/* <div className="grid md:grid-cols-4 gap-6 mt-16">
           <div className="text-center">
             <div className="text-[var(--text-1)] mb-2">1,000+</div>
             <div className="text-[var(--text-4)]">Developers</div>
@@ -38,7 +38,8 @@ export default function CallToAction() {
             <div className="text-[var(--text-1)] mb-2">25+</div>
             <div className="text-[var(--text-4)]">Badges</div>
           </div>
-        </div>
+        </div> */}
+        
       </div>
     </section>
   );

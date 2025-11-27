@@ -16,13 +16,19 @@ const HeroSubSection = ({ innerRef, heading, content, svg, orientation }: any) =
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {orientation === 'left' ? (
             <>
-              <div className="section-content space-y-6">{heading}{content}</div>
+              <div className="section-content space-y-6">
+                <h2 className="text-3xl md:text-4xl text-[#C6F2FA]">{heading}</h2>
+                {content}
+              </div>
               <div className="section-svg relative h-96">{svg}</div>
             </>
           ) : (
             <>
               <div className="section-svg relative h-96 order-2 lg:order-1">{svg}</div>
-              <div className="section-content space-y-6 order-1 lg:order-2">{heading}{content}</div>
+              <div className="section-content space-y-6 order-1 lg:order-2 text-right">
+                <h2 className="text-3xl md:text-4xl text-[#C6F2FA]">{heading}</h2>
+                {content}
+              </div>
             </>
           )}
         </div>
@@ -144,7 +150,7 @@ export default function Hero() {
 
   const heroSections = [
     {
-      heading: <h2 className="text-3xl md:text-4xl text-[var(--text-2)]">Transform Your Journey</h2>,
+      heading: 'Transform Your Journey',
       content: (
         <p className="text-lg text-[var(--text-3)] leading-relaxed">
           Transform your open source journey into an engaging adventure. Every contribution tells a story, every line of code makes a difference.
@@ -154,7 +160,7 @@ export default function Hero() {
       orientation: 'left',
     },
     {
-      heading: <h2 className="text-3xl md:text-4xl text-[var(--text-2)]">Earn Points</h2>,
+      heading: 'Earn Points',
       content: (
         <p className="text-lg text-[var(--text-3)] leading-relaxed">
           Earn points for every contribution. Track your progress, celebrate milestones, and watch your impact grow with each commit.
@@ -164,7 +170,7 @@ export default function Hero() {
       orientation: 'right',
     },
     {
-      heading: <h2 className="text-3xl md:text-4xl text-[var(--text-2)]">Master Fundamentals</h2>,
+      heading: 'Master Fundamentals',
       content: (
         <p className="text-lg text-[var(--text-3)] leading-relaxed">
           Learn fundamentals from the ground up. Build skills, gain confidence, and become the developer you aspire to be.
@@ -174,7 +180,7 @@ export default function Hero() {
       orientation: 'left',
     },
     {
-      heading: <h2 className="text-3xl md:text-4xl text-[var(--text-4)]">Join the Community</h2>,
+      heading: 'Join the Community',
       content: (
         <p className="text-lg text-[var(--text-3)] leading-relaxed">
           Connect with a thriving developer community. Share knowledge, collaborate on projects, and grow together with passionate developers worldwide.
@@ -189,16 +195,19 @@ export default function Hero() {
     <main ref={heroRef} className="overflow-hidden">
       {/* Hero Section */}
       <section id="about" className="relative pt-32 pb-20 px-4 min-h-screen flex items-center">
+        {/* <div className='absolute bottom-0 left-0 rounded-full' style={{boxShadow: '0px 0px 400px 100px #53A2BE'}}></div> */}
+        <div className='absolute top-0 right-0 rounded-full opacity-20' style={{boxShadow: '0px 0px 800px 200px #F0E2A3'}}></div>
         <div className="container mx-auto max-w-7xl text-center">
           <div className="space-y-8">
-            <Badge className="hero-badge bg-gradient-to-r from-[var(--text-4)] to-[var(--text-3)] text-[var(--background)] border-none px-4 py-2 font-bold">
+            <Badge className="hero-badge bg-gradient-to-r from-[#1F0322] to-[#0E1428] text-[#53A2BE] border-none px-4 py-2 font-bold">
               <Sparkles className="size-3 mr-1" />
               Coding Made More Fun
             </Badge>
-            <h1 className="hero-title text-[var(--text-4)] text-8xl md:text-9xl font-bold tracking-tight">
+            <p className="hero-title text-[#d4b5ff] text-8xl md:text-9xl font-light tracking-tight">
               FOSSIT
-            </h1>
-            <p className="hero-subtitle text-2xl md:text-3xl text-[var(--text-2)]">
+            </p>
+            <div className='absolute left-0 right-0 rounded-full opacity-15' style={{boxShadow: '0px 0px 400px 100px #d4b5ff'}}></div>
+            <p className="hero-subtitle text-2xl md:text-3xl text-[#C6F2FA]">
               For Open Source Software, I Think
             </p>
             <div className="hero-buttons flex flex-wrap gap-4 pt-4 justify-center">
@@ -225,7 +234,7 @@ export default function Hero() {
           orientation={s.orientation}
         />
       ))}
-      
+
     </main>
   );
 }

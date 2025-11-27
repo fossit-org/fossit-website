@@ -34,7 +34,7 @@ export default function Navbar() {
               <button
                 key={link.id}
                 onClick={() => scrollToSection(link.id)}
-                className="text-[#EEC643] hover:text-[#91E5F6] uppercase"
+                className="text-[#F7EE7F] hover:text-[#91E5F6] uppercase"
               >
                 {link.label}
               </button>

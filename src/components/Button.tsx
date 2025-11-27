@@ -3,12 +3,12 @@ import { Button } from './ui/button'
 const OutlinedButton = ({ children, variant= 'primary' }: { children: React.ReactNode, variant?: 'primary' | 'secondary' | 'tertiary' }) => {
     const styles: Record<string, React.CSSProperties> = {
         primary: {
-            borderColor: '#D0FCB3',
-            color: '#D0FCB3',
+            borderColor: '#56E39F',
+            color: '#56E39F',
         },
         secondary: {
-            borderColor: '#F9FBB2',
-            color: '#F9FBB2',
+            borderColor: '#F7EE7F',
+            color: '#F7EE7F',
         },
         tertiary: {
             borderColor: 'var(--text-2)',
@@ -17,8 +17,8 @@ const OutlinedButton = ({ children, variant= 'primary' }: { children: React.Reac
     };
 
     const hoverColors: Record<string, { bg: string; text: string }> = {
-        primary: { bg: '#D0FCB3', text: 'var(--bg-1)' },
-        secondary: { bg: '#F9FBB2', text: 'var(--bg-3)' },
+        primary: { bg: '#56E39F', text: 'var(--bg-1)' },
+        secondary: { bg: '#F7EE7F', text: 'var(--bg-3)' },
         tertiary: { bg: 'var(--text-2)', text: 'var(--bg-1)' },
     };
 
