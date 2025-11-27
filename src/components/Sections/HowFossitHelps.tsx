@@ -1,4 +1,3 @@
-import { CardTitle } from '../ui/card';
 import { VerticalCard, HorizontalCard } from '../Card'
 import { Target, Users, BarChart3, Trophy, TrendingUp, Award, Sparkles } from 'lucide-react';
 

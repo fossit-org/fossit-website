@@ -26,6 +26,18 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["**/*.ts", "**/*.tsx"],
+  "include": ["src/**/*", "components/**/*", "styles/**/*", "imports/**/*", "*.tsx"],
+  "exclude": [
+    "**/*.d.ts",
+    "node_modules",
+    "dist",
+    "build",
+    ".vercel",
+    "vite.config.ts",
+    "vite.config.d.ts",
+    "**/ui/form.tsx",
+    "**/ui/sidebar.tsx",
+    "**/ui/sonner.tsx"
+  ],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
