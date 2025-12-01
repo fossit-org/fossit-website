@@ -11,18 +11,31 @@ export default function Footer() {
           </div>
 
           {(() => {
-            const footerCols = [
+            const footerCols: {title: string, links: {name: string, url: string}[]}[] = [
               {
                 title: 'Platform',
-                links: ['Home', 'About FOSSIT', 'Go To The App', 'Communities'],
+                links: [
+                  {name: 'Home', url: '/'}, 
+                  {name: 'About FOSSIT', url: '/about'}, 
+                  {name: 'Go To The App', url: 'https://app.fossit.co.in'}, 
+                  {name: 'Communities', url: '/communities'}
+                ],
               },
               {
                 title: 'Resources',
-                links: ['Learning Centre', 'For Developers', 'For Sponsors', 'For Educational Institutions'],
+                links: [
+                  {name: 'Learning Centre', url: '/learning-centre'}, 
+                  {name: 'For Developers', url: '/for-developers'}, 
+                  {name: 'For Sponsors', url: '/for-sponsors'}, 
+                  {name: 'For Educational Institutions', url: '/for-educational-institutions'}
+                ],
               },
               {
                 title: 'Contact',
-                links: ['Contact', 'Feedback'],
+                links: [
+                  {name: 'Contact', url: '/contact'}, 
+                  {name: 'Feedback', url: '/feedback'}
+                ],
               },
             ];
 
@@ -31,8 +44,8 @@ export default function Footer() {
                 <h5 className="uppercase text-[var(--text-1)] mb-4 font-semibold">{col.title}</h5>
                 <ul className="space-y-2">
                   {col.links.map((link) => (
-                    <li key={link}>
-                      <a href="#" className="underline hover:text-white transition-colors uppercase text-sm">{link}</a>
+                    <li key={link.name}>
+                      <a href={link.url} className="underline hover:text-white transition-colors uppercase text-sm">{link.name}</a>
                     </li>
                   ))}
                 </ul>

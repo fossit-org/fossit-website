@@ -40,7 +40,7 @@ export default function Navbar() {
               </button>
             ))}
 
-            <OutlinedButton>
+            <OutlinedButton href="https://app.fossit.co.in">
               <Github className="size-4 mr-2" />
               Sign In
             </OutlinedButton>
@@ -65,7 +65,8 @@ export default function Navbar() {
                 {link.label}
               </button>
             ))}
-            <OutlinedButton>
+
+            <OutlinedButton href="https://app.fossit.co.in">
               <Github className="size-4 mr-2" />
               Sign In
             </OutlinedButton>

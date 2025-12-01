@@ -45,7 +45,7 @@ export default function HowItWorks() {
         </div>
 
         <div className="text-center">
-          <RaisedButton>
+          <RaisedButton href="https://app.fossit.co.in">
             <Github className="size-5 mr-2" />
             Start Your Journey
           </RaisedButton>

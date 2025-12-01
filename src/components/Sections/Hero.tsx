@@ -211,7 +211,7 @@ export default function Hero() {
               For Open Source Software, I Think
             </p>
             <div className="hero-buttons flex flex-wrap gap-4 pt-4 justify-center">
-              <OutlinedButton variant="primary">
+              <OutlinedButton variant="primary" href="https://app.fossit.co.in">
                 <Github className="size-5 mr-2" />
                 Get Started
               </OutlinedButton>
