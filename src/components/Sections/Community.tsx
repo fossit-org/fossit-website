@@ -1,5 +1,6 @@
 import { Users, Code, Trophy, Star } from 'lucide-react';
 import { HorizontalCard } from '../Card';
+import { OutlinedButton } from '../Button';
 
 export default function Community() {
   const data = [
@@ -36,7 +37,7 @@ export default function Community() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid md:grid-cols-2 gap-8 mb-8">
           {data.map((item, idx) => (
               <HorizontalCard key={idx} icon={item.icon} heading={item.title}>
                 {item.desc}
@@ -45,6 +46,14 @@ export default function Community() {
           }
         </div>
         
+        <div className="flex flex-wrap gap-4 justify-center">
+          <OutlinedButton variant="primary" href="/community">
+            Explore Community
+          </OutlinedButton>
+          <OutlinedButton variant="secondary" href="/developers">
+            For Developers
+          </OutlinedButton>
+        </div>
       </div>
     </section>
   );

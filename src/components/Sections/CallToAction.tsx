@@ -1,4 +1,4 @@
-import { RaisedButton } from '../Button'
+import { RaisedButton, OutlinedButton } from '../Button'
 import { Github } from 'lucide-react';
 
 export default function CallToAction() {
@@ -17,9 +17,9 @@ export default function CallToAction() {
             Sign In with GitHub
           </RaisedButton>
 
-          {/* <OutlinedButton variant='secondary'>
-            Explore Projects
-          </OutlinedButton> */}
+          <OutlinedButton variant='secondary' href="/contact">
+            Contact Us
+          </OutlinedButton>
         </div>
 
         {/* <div className="grid md:grid-cols-4 gap-6 mt-16">

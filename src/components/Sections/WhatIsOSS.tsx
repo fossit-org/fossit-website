@@ -1,5 +1,6 @@
 import { Code, Users, Zap } from 'lucide-react';
 import { HorizontalCard } from '../Card';
+import { OutlinedButton } from '../Button';
 export default function WhatIsOSS() {
 
   const content = [
@@ -43,6 +44,12 @@ export default function WhatIsOSS() {
                 </HorizontalCard>
               ))}
 
+            </div>
+
+            <div className="mt-8">
+              <OutlinedButton variant="primary" href="/about">
+                Know More
+              </OutlinedButton>
             </div>
 
           </div>

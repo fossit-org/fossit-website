@@ -18,16 +18,17 @@ export default function Footer() {
                   {name: 'Home', url: '/'}, 
                   {name: 'About FOSSIT', url: '/about'}, 
                   {name: 'Go To The App', url: 'https://app.fossit.co.in'}, 
-                  {name: 'Communities', url: '/communities'}
+                  {name: 'Communities', url: '/community'}
                 ],
               },
               {
                 title: 'Resources',
                 links: [
-                  {name: 'Learning Centre', url: '/learning-centre'}, 
-                  {name: 'For Developers', url: '/for-developers'}, 
-                  {name: 'For Sponsors', url: '/for-sponsors'}, 
-                  {name: 'For Educational Institutions', url: '/for-educational-institutions'}
+                  {name: 'Learning Centre', url: '/learn'}, 
+                  {name: 'Events & Workshops', url: '/events'}, 
+                  {name: 'For Developers', url: '/developers'}, 
+                  {name: 'For Businesses', url: '/business'}, 
+                  {name: 'For Educational Institutions', url: '/education'}
                 ],
               },
               {
@@ -61,7 +62,7 @@ export default function Footer() {
             </p>
               <div className="text-center uppercase">
               <p className="mb-0">
-                Designed and Developed by and for <span className="underline">India</span><img src="https://em-content.zobj.net/source/twitter/408/flag-india_1f1ee-1f1f3.png" alt="Indian Flag" className="inline-block ml-2 w-[1.75rem]" />
+                Designed and Developed Proudly in <span className="underline">India</span>
               </p>
             </div>
           </div>
